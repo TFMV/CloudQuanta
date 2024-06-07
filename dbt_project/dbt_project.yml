@@ -1,0 +1,12 @@
+name: 'cloudquanta'
+version: '1.0'
+profile: 'default'
+
+# Specify the folder where models are located
+model-paths: ["models"]
+
+# Define the target paths
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"

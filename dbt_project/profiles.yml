@@ -1,0 +1,7 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "dbt_duckdb.db"  # Path to the DuckDB database file
+      extensions: []
