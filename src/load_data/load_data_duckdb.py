@@ -3,7 +3,7 @@ import pyarrow as pa
 
 def load_arrow_to_duckdb(arrow_table, table_name):
     schema_name, table_name = table_name.split('.')
-    db_path = 'dbt_duckdb.db'
+    db_path = '/Users/thomasmcgeehan/CloudQuanta/CloudQuanta/dbt_project/dbt_duckdb.db'
     conn = duckdb.connect(database=db_path)
     conn.execute(f"CREATE SCHEMA IF NOT EXISTS {schema_name}")
     conn.register("arrow_table", arrow_table)
